@@ -75,7 +75,7 @@ export default function Portfolio() {
               .
             </h2>
 
-            <p className="text-slate-600 text-xl max-w-xl leading-relaxed">
+            <p className="text-slate-600 text-xl max-w-xl leading-relaxed bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-slate-200 shadow-sm">
               Olá, meu nome é Joabe Andrade, sou um desenvolvedor Fullstack, e
               formando no curso de ciência da computação na Universidade
               Estadual de Santa Cruz (UESC). Atualmente sou desenvolvedor
@@ -116,7 +116,7 @@ export default function Portfolio() {
             <div className="absolute inset-0 bg-gradient-to-tr from-accent to-blue-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
             <div className="relative w-full h-full rounded-full border-4 border-white shadow-2xl overflow-hidden bg-slate-100 flex items-center justify-center">
               <Image
-                src="/perfil.jpg"
+                src="/perfil.jpeg"
                 alt="Foto de Joabe"
                 width={400}
                 height={400}
