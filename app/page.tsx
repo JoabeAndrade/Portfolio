@@ -88,7 +88,7 @@ export default function Portfolio() {
             </h2>
 
             <p className="text-slate-600 text-xl max-w-xl leading-relaxed bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-slate-200 shadow-sm">
-              Olá, meu nome é Joabe Andrade, sou um desenvolvedor Fullstack, e
+              Olá, meu nome é Joabe Andrade, sou desenvolvedor Fullstack,
               formando no curso de ciência da computação na Universidade
               Estadual de Santa Cruz (UESC). Atualmente sou desenvolvedor
               Fullstack na ISUS, tabalhando com as tecnologias React, Node,
