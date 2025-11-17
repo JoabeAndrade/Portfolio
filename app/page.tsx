@@ -1,5 +1,5 @@
 import Image from "next/image";
-import GridBackground from "@/components/GridBackground"; // <--- Importe o novo componente
+import GridBackground from "@/components/GridBackground";
 import {
   Github,
   Linkedin,
@@ -13,6 +13,18 @@ import {
   Code2,
   Layout,
 } from "lucide-react";
+
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiNodedotjs,
+  SiExpress,
+  SiPython,
+  SiDjango,
+  SiPostgresql,
+  SiTailwindcss,
+} from "react-icons/si";
 
 export default function Portfolio() {
   return (
@@ -80,7 +92,7 @@ export default function Portfolio() {
               formando no curso de ciência da computação na Universidade
               Estadual de Santa Cruz (UESC). Atualmente sou desenvolvedor
               Fullstack na ISUS, tabalhando com as tecnologias React, Node,
-              Typescript, Python, Djando e PostgreSQL. Também faço parte de uma
+              Typescript, Python, Django e PostgreSQL. Também faço parte de uma
               residência em software, construindo soluções tecnologicas com o
               React Native (Expo), design patterns e clean code. Reconhecido por
               minha comunicação eficaz, organização e proatividade, destaco-me
@@ -259,125 +271,44 @@ export default function Portfolio() {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             <StackCard name="React">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-10 h-10 text-[#61DAFB]"
-              >
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                />
-                <ellipse
-                  cx="12"
-                  cy="12"
-                  rx="3"
-                  ry="8"
-                  transform="rotate(45 12 12)"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                />
-                <ellipse
-                  cx="12"
-                  cy="12"
-                  rx="3"
-                  ry="8"
-                  transform="rotate(-45 12 12)"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                />
-              </svg>
+              <SiReact size={40} className="text-[#61DAFB]" />
             </StackCard>
+
             <StackCard name="Next.js">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-10 h-10 text-black"
-              >
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                  fill="currentColor"
-                />
-                <path d="M10 8V16" stroke="white" strokeWidth="1.5" />
-                <path d="M14 8V16" stroke="white" strokeWidth="1.5" />
-                <path d="M10 8L14 16" stroke="white" strokeWidth="1.5" />
-              </svg>
+              <SiNextdotjs size={40} className="text-black" />
             </StackCard>
+
             <StackCard name="React Native">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-10 h-10 text-[#61DAFB]"
-              >
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                />
-                <circle cx="12" cy="12" r="2" fill="currentColor" />
-              </svg>
+              {/* React Native usa o mesmo logo do React */}
+              <SiReact size={40} className="text-[#61DAFB]" />
             </StackCard>
+
             <StackCard name="TypeScript">
-              <div className="w-10 h-10 bg-[#3178C6] rounded flex items-center justify-center text-white font-bold text-xl">
-                TS
-              </div>
+              <SiTypescript size={40} className="text-[#3178C6]" />
             </StackCard>
+
             <StackCard name="Node.js">
-              <svg
-                viewBox="0 0 24 24"
-                className="w-10 h-10 text-[#339933]"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2L4 6.5V17.5L12 22L20 17.5V6.5L12 2Z"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                />
-                <path d="M12 10V14" stroke="currentColor" strokeWidth="2" />
-              </svg>
+              <SiNodedotjs size={40} className="text-[#339933]" />
             </StackCard>
+
             <StackCard name="Express">
-              <span className="font-bold text-lg text-slate-800 border-2 border-slate-800 rounded-full p-2 h-10 w-10 flex items-center justify-center">
-                ex
-              </span>
+              <SiExpress size={40} className="text-slate-800" />
             </StackCard>
+
             <StackCard name="Python">
-              <svg
-                viewBox="0 0 24 24"
-                className="w-10 h-10 text-[#3776AB]"
-                fill="currentColor"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-                <circle cx="9" cy="8" r="1" fill="#FFD43B" />
-                <circle cx="15" cy="16" r="1" fill="#FFD43B" />
-              </svg>
+              <SiPython size={40} className="text-[#3776AB]" />
             </StackCard>
+
             <StackCard name="Django">
-              <div className="w-10 h-10 bg-[#092E20] rounded flex items-center justify-center text-white font-bold text-sm">
-                dj
-              </div>
+              <SiDjango size={40} className="text-[#092E20]" />
             </StackCard>
+
             <StackCard name="PostgreSQL">
-              <svg
-                viewBox="0 0 24 24"
-                className="w-10 h-10 text-[#336791]"
-                fill="currentColor"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z" />
-              </svg>
+              <SiPostgresql size={40} className="text-[#336791]" />
             </StackCard>
+
             <StackCard name="Tailwind CSS">
-              <svg
-                viewBox="0 0 24 24"
-                className="w-10 h-10 text-[#06B6D4]"
-                fill="currentColor"
-              >
-                <path d="M12.0002 11.9998C12.0002 11.9998 7.50023 7.49984 4.50023 10.4998C1.50023 13.4998 4.50023 16.4998 4.50023 16.4998C4.50023 16.4998 9.00023 20.9998 12.0002 17.9998C15.0002 14.9998 12.0002 11.9998 12.0002 11.9998Z" />
-                <path d="M19.5002 4.49984C19.5002 4.49984 15.0002 -0.000156403 12.0002 2.99984C9.00023 5.99984 12.0002 8.99984 12.0002 8.99984C12.0002 8.99984 16.5002 13.4998 19.5002 10.4998C22.5002 7.49984 19.5002 4.49984 19.5002 4.49984Z" />
-              </svg>
+              <SiTailwindcss size={40} className="text-[#06B6D4]" />
             </StackCard>
           </div>
         </section>
